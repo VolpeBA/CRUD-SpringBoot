@@ -18,8 +18,8 @@ public class TestConfig implements CommandLineRunner {
 
     @Override // Sobrescreve o método run
     public void run(String... args) throws Exception {
-        User u1 = new User(null, "Bruno Volpe", "bruno@email.com", "1234-1234","123321" );
-        User u2 = new User(null, "Bruno Araujo", "bruno@email.com", "1234-1234","123321" );
+        User u1 = new User(null, "Bruno Volpe", "123","123","123");
+        User u2 = new User(null, "Bruno Araujo", "bruno@email.com", "1234-1234","123321");
 
         userRepository.saveAll(Arrays.asList(u1, u2));
     }
